@@ -1,0 +1,51 @@
+echo "__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.venv/
+env/
+*.env
+*.venv
+
+# Cache & Logs
+*.log
+logs/
+debug.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+requirements.txt
+
+# Uvicorn and Gunicorn logs
+gunicorn.log
+gunicorn.error.log
+
+# Pytest cache
+.pytest_cache/
+
+# Mypy cache
+.mypy_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# SQLite database
+*.sqlite3
+*.db
+
+# Docker
+docker-compose.override.yml" > .gitignore
