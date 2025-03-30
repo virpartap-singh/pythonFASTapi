@@ -3,9 +3,11 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from database import engine, AsyncSessionLocal  # Ensure correct import
 from sqlalchemy.sql import text
 from sqlalchemy.ext.asyncio import create_async_engine
+import os
+from dotenv import load_dotenv
 
-
-DATABASE_URL = "postgresql+asyncpg://postgres:Liberty%4023@127.0.0.1:5432/rp2025"
+load_dotenv()
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 async def test_connection():
     try:
