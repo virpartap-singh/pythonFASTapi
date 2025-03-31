@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
-from models import Base
+from app.models.user_models import Base
 print(Base.metadata.tables.keys())
 import asyncio
 

@@ -1,6 +1,6 @@
 import asyncio
 from sqlalchemy.ext.asyncio import AsyncSession
-from database import engine, AsyncSessionLocal  # Ensure correct import
+from app.database import engine, AsyncSessionLocal  # Ensure correct import
 from sqlalchemy.sql import text
 from sqlalchemy.ext.asyncio import create_async_engine
 import os
